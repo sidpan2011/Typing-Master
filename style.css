@@ -1,39 +1,61 @@
 body{
+    margin: 0;
     text-align: center;
-    padding: 100px;
-    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-h1{
-
-    background-color: white;
-    padding: 8px;
+html body{
+    background-color: rgb(36, 35, 35);
+}
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+p{
+    margin: 0;
+}
+p.title{
     text-align: center;
-    width: fit-content;
-    border: solid 1.7px;
+    margin: 0;
+    align-items: center;
+    font-style: normal;
+    font-size: 1.7rem;
+    color: rgb(197, 180, 30);
+    padding: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+}
+header nav {
+    display: flex;
+    align-items: center;
 }
 .text-box{
-    font-size: larger;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
     padding: 12px;
     height: 100%;
+    color: rgb(190, 189, 187);
     background-color: transparent;
 }
 
 .box {
-    padding: 20px;
-    background-color: white;
+    padding: 25px;
     justify-content: center;
     align-items: center;
-    flex: auto;
-    flex-wrap: wrap;
     box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    
+}
+header nav img{
+    border-radius: 0;
+    position: relative;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
 }
 textarea{
-    padding: 0;
-    border-radius: 5px;
-    width: 100%;
-    border: solid 1px;
+    display: none;
 }
 .scroll{
     resize: none;
@@ -42,7 +64,7 @@ textarea{
 li{
     font-weight: 450;
     font-size: larger;
-    color: black;
+    color: rgb(190, 189, 187);
     list-style: none;
     width: min-content;
 }
@@ -52,6 +74,277 @@ li{
     align-items: center;
     justify-content: space-between;
 }
-span {
+li span {
     font-weight: 700;
+    font-size: larger;
+    color: rgb(197, 180, 30);
+}
+header{
+    padding:  20px 50px;
+    margin: 0 88px;
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 60px 60px;
+    max-width: 830px;
+
+}
+textarea{
+    border: none;
+    outline: none;
+}
+img{
+    width: 54px;
+    border-radius: 50%;
+}
+footer {
+    margin-top: 0;
+    padding: 0 120px;
+    padding-bottom: 20px;
+    margin-top: auto;
+    bottom: 0;
+    
+}
+.footer{
+    /* padding-bottom: 20px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.label{
+    padding: 0 25px;
+    color: rgb(185, 185, 185);
+}
+.links{
+    padding-left: 280px;
+}
+.label span{
+    font-size: large;
+    font-weight: 800;
+}
+.links a{
+    padding: 0 12px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px){
+    p.title{
+        padding: 12px;
+        align-items: center;
+        text-align: center;
+    }
+    header{
+        padding: 20px 20px;
+        margin: 0;
+    }
+    header nav {
+        align-items: center;
+        justify-content: center;
+    }
+    header nav img{
+        display: none;
+    }
+    img{
+        width: 70px;
+    }
+    footer{
+        bottom: 0;
+        padding: 0 90px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .links{
+        display: none;
+    }
+    .container{
+        padding: 60px 60px;
+    }
+    .label h7{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:1340px) and (min-width:900px) {
+    .links{
+        padding-left: 110px;
+    }
+    header{
+        margin: 0;
+    }
+    .footer{
+        bottom: 0;
+        justify-content: center;
+    }
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:425px){
+    header{
+        padding: 20px 20px;
+        margin: 0;
+    }
+    header nav {
+        align-items: center;
+        justify-content: center;
+    }
+    header nav img{
+        display: none;
+    }
+    .text-box{
+        font-size: 1.3rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+    li span{
+        font-size: large;
+    }
+    .links{
+        display: none;
+    }
+    img{
+        width: 22%;
+    }
+    footer{
+        bottom: 0;
+        padding: 0 70px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer{
+        align-items: center;
+        justify-content: center;
+    }
+    .label h7{
+        font-size: 0.84rem;
+    }
+}
+@media screen and (max-width:375px) {
+    .text-box{
+        font-size: 1.2rem;
+    }
+    header{
+        padding: 20px 20px;
+        margin: 0;
+    }
+    header nav {
+        align-items: center;
+        justify-content: center;
+    }
+    header nav img{
+        display: none;
+    }
+    li{
+        font-size: 14px;
+    }
+    li span{
+        font-size: large;
+    }
+    footer{
+        bottom: 0;
+        padding: 0 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    header{
+        padding: 20px 20px;
+        margin: 0;
+    }
+    header nav {
+        align-items: center;
+        justify-content: center;
+    }
+    header nav img{
+        display: none;
+    }
+    p.title{
+        font-size: 1.3rem;
+    }
+    li{
+        font-size: 13px;
+    }
+    li span{
+        font-size: large;
+    }
+    .label h7{
+        font-size: 0.84rem;
+    }
+    footer{
+        bottom: 0;
+        padding: 0 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    img{
+        width: 18%;
+    }
+    .popup{
+        display: none;
+    }
+}
+
+.popup{
+    background-color: rgb(16, 16, 17);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 20px 20px 22px rgba(0.05, 0.05, 0.05, 0.05);
+    display: none;
+    
+}
+.popup p{
+    width: 300px;
+    color: rgb(192, 189, 189);
+    font-size: large;
+    font-weight: 450;
+}
+.popup h3{
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 22px;
+    color: rgb(207, 210, 212);
+
+}
+.popup h5{
+    text-align: center;
+    font-weight: 700;
+    color: rgb(217, 223, 217);
+    padding-bottom: 24px;
+}
+.close{
+   border-radius: 50%;
+   background-color: transparent;
+   border: none;
+   font-size: medium;
+   font-weight: 700;
+   width: min-content;
+   color: rgb(119, 117, 117);
+}
+.popup button{
+    display: block;
+    margin: 0 0 20px auto;
 }
