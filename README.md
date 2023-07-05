@@ -5,6 +5,7 @@
 Typing Master is a minimalistic design typing test game. It has features that include a smooth minimal design, 
 the ability to see what to type, live errors, timer, wpm (words per minute), accuracy display, score, and different 
 levels which make it more engaging and interactive.
+The frontend design is inspired by https://monkeytype.com/
 
 This version only includes the front end of the application. 
 
