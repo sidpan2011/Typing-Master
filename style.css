@@ -12,7 +12,6 @@ body {
 
 .main {
     height: 100vh;
-    /* margin: 0 200px; */
 }
 
 .container {
@@ -142,6 +141,48 @@ footer {
     100%{
         opacity: 1;
     }
+}
+@media screen and (max-width: 425px){
+    .container{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    } 
+    .list-bar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .header{
+        margin-top: 10px;
+    }
+    .header h1{
+        font-size: 2rem;
+    }
+    .box{
+        height: 100vh;
+        margin: 20px 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-box {
+        margin: 10px 0;
+        width: fit-content;
+        font-size: 1.2rem;
+    }
+    .container a:active{
+        color: white;
+    }
+    .list-bar li{
+        font-size: 1.2rem;
+    }
+    .list-bar li span{
+        font-size: 1.4rem;
+    }
+    
 }
 
 @media screen and (max-width: 768px){
