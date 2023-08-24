@@ -126,9 +126,23 @@ footer p {
 
 footer {
     margin-bottom: 8px;
-    display: none;
+    bottom: 0;
+}
+.footer{
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.footer p a{
+    text-decoration: none;
+    color: rgba(99, 97, 97, 0.952);
+}
+.footer p{
+    font-size: 1.2rem;
+}
+.footer p a:hover{
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 @keyframes blink {
@@ -181,6 +195,9 @@ footer {
     }
     .list-bar li span{
         font-size: 1.4rem;
+    }
+    .footer{
+        margin-top: 30px;
     }
     
 }
@@ -262,5 +279,8 @@ footer {
     }
     .list-bar a{
         font-size: 2.5rem;
+    }
+    .footer p{
+        font-size: 2rem;
     }
 }
