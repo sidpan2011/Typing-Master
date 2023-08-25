@@ -33,7 +33,6 @@ function handleParagraph(){
         let span = `<span>${elem}</span>`
         textBox.innerHTML += span; 
     } );
-    textBox.querySelectorAll("span")[0].classList.add("before")
     textBox.querySelectorAll("span")[0].classList.add("active");
     textBox.addEventListener("click", () => inputBox.focus());
     document.addEventListener("keydown", () => inputBox.focus());
@@ -46,7 +45,6 @@ function startTyping(){
     let typedChar = inputBox.value.split("")[charIndex]
     if(charIndex < characters.length && timeLeft > 0){
         if(!isTyping){
-            textBox.querySelectorAll("span")[0].classList.remove("before")
             time = setInterval(startTimer, 1000)
             isTyping = true
         }
